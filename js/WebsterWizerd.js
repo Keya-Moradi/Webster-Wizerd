@@ -122,16 +122,18 @@ WebsterWizerd.prototype.getTemplate = function(template_url) {
 WebsterWizerd.prototype.handleEvents = function() {
     var self = this;
     var charlie = document.querySelector('#charlie');
-
+    console.log($('.container'));
     $('.container').on('submit', 'form', function(event) {
         event.preventDefault();
         if (charlie.value === "") {
             alert("NO CHARLES NO");
             return;
+
         }
+
         self.showResults(charlie.value)
     })
-
+    console.log(self.showResults)
     $('.container').on('click', '.sound-button', function() {
         var prefix = "http://media.merriam-webster.com/soundc11/";
         var url = this.getAttribute("url");
@@ -142,7 +144,7 @@ WebsterWizerd.prototype.handleEvents = function() {
         tag.src = audio_url;
         tag.play();
     })
-   
+
 
 }
 

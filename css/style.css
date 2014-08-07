@@ -7,10 +7,6 @@
     margin: 0 auto;
 }
 
-@font-face {
-    font-family:"Erase Old Year";
-    src:url("Erase Old Year.ttf");
-}
 
 .header {
     text-align: center;
