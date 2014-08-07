@@ -67,7 +67,7 @@ WebsterWizerd.prototype.showResults = function(word) {
     ).then(
         //-After the promises are successfully passed to $.then(), it pipes the results to the function on line 76
         //-The function is passed 4 objects; 1 dictionary data, 1 thesaurus data, and a template for each
-        //
+
 
         function(definitionData, dictionaryTemplateResults, thesaurusData, synonymTemplateResults) {
 
@@ -142,6 +142,8 @@ WebsterWizerd.prototype.handleEvents = function() {
         tag.src = audio_url;
         tag.play();
     })
+   
+
 }
 
 
